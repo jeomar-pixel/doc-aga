@@ -35,7 +35,7 @@
             android:theme="@style/AppTheme.NoActionBarLaunch"
             android:launchMode="singleTask"
             android:exported="true"
-            android:name="com.goldenforage.docaga.MainActivity">
+            android:name="app.lovable.fa0cc69c441c4305b8c2e99c9ca1b5ea.MainActivity">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,5 +1,23 @@
 # Changelog
 
+## 2026-03-04 — Infrastructure & Deployment Readiness
+
+### Fixed
+- **Production Build / R8 Optimization Error**: Patched `capacitor-native-settings` plugin to replace deprecated `proguard-android.txt` with `proguard-android-optimize.txt`. This fixes the AGP 9.0.1+ build failure and enables R8 logic optimizations for production builds.
+
+### Changed
+- **Android Application Identity**: Updated Android package name (Application ID) to `app.lovable.fa0cc69c441c4305b8c2e99c9ca1b5ea` across all config files (`capacitor.config.ts`, `build.gradle`, `AndroidManifest.xml`) and internal constants.
+- **Android Project Refactoring**: Migrated `MainActivity.java` and internal directory structure to match the new package name.
+- **Capacitor Config Cleanup**: Removed deprecated `bundledWebRuntime` property from configuration files to resolve terminal lint warnings and align with modern Capacitor standards.
+
+### Files Modified
+- `capacitor.config.ts` — Updated `appId`, removed `bundledWebRuntime`.
+- `android/app/build.gradle` — Updated `namespace` and `applicationId`.
+- `android/app/src/main/AndroidManifest.xml` — Updated `MainActivity` package path.
+- `android/app/src/main/java/app/lovable/fa0cc69c441c4305b8c2e99c9ca1b5ea/MainActivity.java` — Relocated and updated package.
+- `src/lib/appConfig.ts` — Updated `appId` constant.
+- `scripts/patch-capacitor-native-settings.js` — Executed to apply Proguard fix.
+
 ## 2026-03-04 — Farmer Journey Audit: Sign-up to First Sale
 
 ### Added

@@ -144,7 +144,7 @@ npx cap open android # Open in Android Studio
 
 ## Mobile (Capacitor)
 
-- App ID: `com.goldenforage.docaga`
+- App ID: `app.lovable.fa0cc69c441c4305b8c2e99c9ca1b5ea`
 - Web dir: `dist`
 - Android scheme: HTTPS
 - `navigator.onLine` is unreliable on Android WebView — **NEVER use directly**. Use `getIsOnline()` or `useOnlineStatus()` hook, which use active connectivity probing (singleton fetch to `connectivitycheck.gstatic.com/generate_204` with `no-cors` mode)

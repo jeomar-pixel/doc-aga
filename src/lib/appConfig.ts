@@ -4,7 +4,7 @@
  */
 
 export const APP_CONFIG = {
-  appId: 'com.goldenforage.docaga',
+  appId: 'app.lovable.fa0cc69c441c4305b8c2e99c9ca1b5ea',
   appName: 'Doc Aga',
   publishedUrl: 'https://doc-aga.lovable.app',
 } as const;
@@ -19,7 +19,7 @@ export const getPublicAppUrl = () => APP_CONFIG.publishedUrl;
  * Get the Android app settings URL for AppLauncher
  * Opens the app's settings page in Android system settings
  */
-export const getAndroidSettingsUrl = () => 
+export const getAndroidSettingsUrl = () =>
   `package:${APP_CONFIG.appId}`;
 
 /**

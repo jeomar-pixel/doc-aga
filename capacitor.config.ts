@@ -1,9 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.goldenforage.docaga',
+  appId: 'app.lovable.fa0cc69c441c4305b8c2e99c9ca1b5ea',
   appName: 'Doc Aga',
-  bundledWebRuntime: false,
   backgroundColor: '#FF166534',
   webDir: 'dist',
   server: {

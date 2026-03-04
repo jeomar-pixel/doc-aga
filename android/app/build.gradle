@@ -8,14 +8,14 @@ repositories {
 }
 
 android {
-    namespace "com.goldenforage.docaga"
+    namespace "app.lovable.fa0cc69c441c4305b8c2e99c9ca1b5ea"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.goldenforage.docaga"
+        applicationId "app.lovable.fa0cc69c441c4305b8c2e99c9ca1b5ea"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "2.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
             ignoreAssetsPattern '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
